@@ -71,8 +71,47 @@ p{
 	font-size: 1.5em;
 }
 .section{
-	text-align:center;
+	/*text-align:center;  */
+ 
+
 }
+
+
+#section0{
+
+}
+
+.column-layout {
+
+margin:auto auto auto auto;
+line-height: 1.65;
+display: flex;
+
+
+
+}
+.main-column{
+font-size: 10px;
+	
+	margin-top: 2rem;
+	margin-left: 2rem;
+	flex: 2;
+}
+.sidebar{
+align-content: top;
+margin-bottom: 1000px;
+flex:1;
+
+}
+.column-layout2{
+
+	background-color: red;
+}
+ 
+
+
+
+
 #menu li {
 	display:inline-block;
 	margin: 10px;
