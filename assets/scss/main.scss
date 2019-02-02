@@ -24,16 +24,6 @@ $white: #FFFFFF;
 @import 'modules';
 
 
-#headingOne{
-	
-	position: left;
-}
-
-#section0 {
-	
-	background-image: url("../images/anushbg.jpg");
-}
-
 
 
 .portfolio{
@@ -85,22 +75,11 @@ $white: #FFFFFF;
 
 #other-works{
 
-	background: url(../images/blogbg.jpeg);
-	background-size: cover;
-	background-position: right;
-	background-repeat: no-repeat;
-	padding: 2rem 0;
-	margin-bottom: 0;
-	@media #{$med} {padding: 4rem 0}
-	@media #{$lrg} {
-		background-position: top 15% right;
-		padding: 4rem 0}
 }
 
 .other-workslist{
 
-	margin: 0rem auto;
-
+	
 
 }
 
