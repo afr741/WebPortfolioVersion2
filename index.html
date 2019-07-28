@@ -1,196 +1,161 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Anushervon Rakhmatov</title>
-    <meta name="author" content="Anusherevon Rakhmatov" />
-    <meta name="description" content="web portfolio" />
-    <meta name="keywords"  content="Portfolio,Anushervon,Rakhmatov,developer" />
-    <meta name="Resource-type" content="Document" />
-    <meta name = "viewpoint" content = "width=device-width, user-scalable=no,
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <title> Anush's Portfolio</title>
+ <meta name = "viewpoint" content = "width=device-width, user-scalable=no,
  initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
 
 
-    <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="examples.css" />
-     <link rel="stylesheet" type="text/css" href="assets/scss/main.scss" />
-     
+ <!--Font Awesome-->
+
+<link rel = "stylesheet href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
-</head>
+ <link rel="preload" href="assets/scss/main.scss" as="style">
+ <link rel="preload" as="image" href="assets/images/blogbg.jpeg">
+  <link rel="preload" href="assets/js/main.js" as="script">
+  <link rel="preload" href="html/#other-works" as="id">
+<link rel="preload" as="image" href="assets/images/face3.jpg">
+<!--styles-->
+ <link rel ="stylesheet" href="assets/css/main.css">
+
+	<script >
+    /*Scroll transition to anchor*/
+$("a.toscroll").on('click',function(e) {
+    var url = e.target.href;
+    var hash = url.substring(url.indexOf("#")+1);
+    $('html, body').animate({
+        scrollTop: $('#'+hash).offset().top
+    }, 500);
+    return false;
+});
+
+ 	</script>
+
+
+<div id = "container">
+ <div class = "header ">
+
+ <div>
+ </head>
+
 <body>
 
-<ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">About</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">My projects</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Other Works</a></li>
-    <li data-menuanchor="4thPage"><a href="#4thPage">Contact Me</a></li>
- <!--    <li data-menuanchor="4thPage"><a href="https://zety.com/mycv/anushrakhmatov">Resume</a></li> -->
-</ul>
+	<div class="header-background">
+	<header class = "header header--sticky ">
+
+		<div class = "container header__container">
 
 
 
 
-<div id="fullpage">
-   <div class="section" id="section0">
-    
+			<a href = "#hero1" class="button header__button" id = "header-buttons"> About</a><br>
+			<a href = "#port-title" class="button header__button" id = "header-buttons"> My projects</a><br>
 
-    <div class= "column-layout">
-    
-        <div class = "main-column">
-          <p>Hi, I am Anushervon Rakhmatov;</p>  
-          <p>a Web Developer based in St. John's, NL.</p>
-     
-          <p>I am a fourth year Computer Science student at the Memorial University of Newfoundland. I have a passion for learning new things and love the thrill of solving challenging problems.</p>
-          <p>
-            I am knowledgable in object oriented development and Java is my language of choice. I have several Java projects that you can read more about at the Project section of this site. Although I am striving to be a great software developer, I have also had professional experience as a web developer and have practical working knowledge of HTML, CSS and JavaScript. This is a website I created using HTML, CSS, JavaScript, PHP and Photoshop. I enjoy learning about programming, basketball and blockchain technologies.
-          </p>
-        </div>
+			<a href = "#other-works" class="button  header__button" id = "header-buttons"> Other works</a><br>
+
+			<a href = "https://zety.com/mycv/anushrakhmatov" class="button  header__button" id = "header-buttons">Resume</a><br>
+			<a href = "contact.html" class="button  header__button" id = "header-buttons"> Contact Me </a><br>
 
 
-        <div class = "sidebar-one">
-            <img src="assets/images/anushbg.png" alt="Anush">
-        </div>
+		</div>
+	</header>
 
-      </div>
+		<div id = "hero1" class = "hero">
+      <img class="hero__image" src="assets/images/face4.png">
+      <div class = "heroStory">
+			<h1 class="hero__headline animate-pop-in med--col-5 lrg--col-7">
+			Hi, I am Anushervon Rakhmatov;<br>
+			a Web Developer based in St. John's, NL.
+			</h1>
+			<p class ="hero__description animate-pop-in med--col-5 lrg--col-7">I am a fourth year Computer Science student at the Memorial University of Newfoundland. I have a passion for learning new things and love the thrill of solving challenging problems.</p>
+<p class ="hero__description animate-pop-in med--col-5 lrg--col-7">
+I am knowledgable in object oriented development and Java is my language of choice. I have several Java projects that you can read more about at the Project section of this site. Although I am striving to be a great software developer, I have also had professional experience as a web developer and have practical working knowledge of HTML, CSS and JavaScript. This is a website I created using HTML, CSS, JavaScript, PHP and Photoshop. I enjoy learning about programming, basketball and blockchain technologies.
+<p>
+</div>
+ 		</div>
+ 	</div>
 
-    <div class = "column-layout2">
-
-<ul class="soc">
-  <li><a class="icon-13 github" href="#" title="GitHub" preserveAspectRatio="xMidYMid meet">
-      <svg viewbox="0 0 512 512">
-        <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
-      </svg></a></li>
-
-      <li><a class="icon-17 linkedin" href="#" title="LinkedIn" preserveAspectRatio="xMidYMid meet">
-      <svg viewbox="0 0 512 512">
-        <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
-      </svg></a></li>
-    </ul>
-<!--
-        <div><a href="#" class="fa fa-linkedin"></a></div>
-        <div><a href="#" class="fa fa-github"></a></div>
-        <div><a href="#" class="fa fa-youtube"></a></div>
-
-      -->
-
-    </div>
-
-  </div>
-
-
-
-    <div class="section" id="section1">
-        <div class="slide" id="slide1">
-            <div class="intro">
-                <h1>My Projects</h1>
 <section id = "portfolio">
 
-  <div class ="row portfolio">
-    <h2 id = "port-title" class = "title-flex">My projects</h2>
+  <div class="row portfolio">
+		<h2 id="port-title" class="title-flex">My projects</h2>
 
-<section class="paddingSection100 work-tiles workTiles">
-    <div class="container">
-
-      <ul class="row">
-        <li class="col-xs-6 col-md-3 work-tiles-items">
-          <div class="portfolioInner">
-            <a href="#"><img alt="Image Alt 1" class="img-responsive" src="assets/images/blue.png"></a>
-            <div class="textOverlay">
-              <span>Portfolio Item Title 1</span>
-            </div>
-          </div>
-        </li>
-    <li class="col-xs-6 col-md-3 work-tiles-items">
-          <div class="portfolioInner">
-            <a href="#"><img alt="Image Alt 2" class="img-responsive" src="assets/images/purple.jpg"></a>
-            <div class="textOverlay">
-              <span>Portfolio Item Title 2</span>
-            </div>
-          </div>
-        </li>
-
-
-      </ul>
-    </div>
-  </section>
-
-    </section>
-
-              
-            </div>
-        </div>
-        <div class="slide" id="slide2">
-            <div class="intro">
-                <h1>My Projects</h1>
-                <section id = "portfolio">
-
-  <div class ="row portfolio">
-    <h2 id = "port-title" class = "title-flex">My projects</h2>
-
-   
-    
-    <div class = "portfolio-piece med--col-4" style = "background-image: url('assets/images/blue.png')">
-      <h3 class = "portfolio-piece__title"><a href= "https://github.com/afr741/TournamentApp">TournamentApp</h3>
-    <p class = "portfolio-piece__tags">Java</p></a>
-    </div>
-
-    <div class = "portfolio-piece med--col-4" style = "background-image: url('assets/images/red1.JPG')">
-      <h3 class = "portfolio-piece__title"><a href= "https://github.com/afr741/pacman">Pacman - a classic 8-pixel video game</h3>
-    <p class = "portfolio-piece__tags">HTML5, Javascript</p></a>
-    </div>
-    
-    <div class = "portfolio-piece med--col-4" style = "background-image: url('assets/images/yellow.jpg')">
-      <h3 class = "portfolio-piece__title"><a href= "https://github.com/afr741/MIPS-decoder">MIPS decoder written in Java</h3>
-    <p class = "portfolio-piece__tags">Java</p></a>
-    </div>
-
-   
-
-
-    </section>
-
-                <p>You can apply the same logic to horizontal slides</p>
-            </div>
-        </div>
-        <div class="slide" id="slide3">
-            <h1>Slide 2.3</h1>
-            <section id = "portfolio">
-
-  <div class ="row portfolio">
-    <h2 id = "port-title" class = "title-flex">My projects</h2>
-
-
-    <div class = "portfolio-piece med--col-4" style ="background-image: url('assets/images/teal.jpg');">
-      <h3 class = "portfolio-piece__title"><a href= "https://github.com/afr741/MySQL-PHP-queries">PHP queries for the Mysql database</h3>
-    <p class = "portfolio-piece__tags">SQL, PHP</p></a>
-    </div>
-
-    <div class = "portfolio-piece med--col-4" style = "background-image: url('assets/images/orange.png')">
-      <h3 class = "portfolio-piece__title"><a href= "">Reactapp</h3>
-    <p class = "portfolio-piece__tags">HTML5, ReactJS</p></a>
-    </div>
-
-
-    </section>
-        </div>
-
-    </div>
+		<div class="portfolio-piece med--col-4" style="background-image:
+		url('assets/images/purple.jpg');">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/OurCityFalls-JS-game-">Our City Falls</a></h3><a href="https://github.com/afr741/OurCityFalls-JS-game-">
+		<p class="portfolio-piece__tags">8-bit pixel video game - HTML5,Javascript</p></a>
+		</div>
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/purple.jpg')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/pacman">Pacman - a classic 8-pixel video game</a></h3><a href="https://github.com/afr741/pacman">
+		<p class="portfolio-piece__tags">HTML5, Javascript</p></a>
+		</div>
 
 
 
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/green1.jpg')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/Social_Network_Website">The Social Network with geolocation</a></h3><a href="https://github.com/afr741/Social_Network_Website">
+		<p class="portfolio-piece__tags">HTML, CSS, Javascript, Nodejs, Geolocation API</p></a>
+		</div>
 
-    <div class="section" id="section2">
-        <div class="intro">
-            <div class="slide" id="slide1">
-            <div class="intro">
-              <section id="other-works">
-      <div class = "row">
-        <div class="other-works">
-        <h2 class = "title-flex">Other works</h2>
-        <p class ="hero__description med--col-5 lrg--col-7">
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/green1.jpg')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/afr741.github.io">Web Portfolio</a></h3><a href="https://github.com/afr741/afr741.github.io">
+		<p class="portfolio-piece__tags">HTML, CSS, Javascript, PHP,</p></a>
+		</div>
+
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/blue.png')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/Android-Weather-App">Android Weather App</a></h3><a href="https://github.com/afr741/Android-Weather-App">
+		<p class="portfolio-piece__tags">Java</p></a>
+		</div>
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/blue.png')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/Quizler-Android">Quizzler - Android Quiz App</a></h3><a href="https://github.com/afr741/Quizler-Android">
+		<p class="portfolio-piece__tags">Java</p></a>
+		</div>
+
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/red1.JPG')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/Sci-FiShooter">Sci-fi Shooter - FPS game demo</a></h3><a href="https://github.com/afr741/Sci-FiShooter">
+		<p class="portfolio-piece__tags">C#/Unity</p></a>
+		</div>
+
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/red1.JPG')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/GalaxyShooter">Galaxy Shooter - 2D top-down shooter game</a></h3><a href="https://github.com/afr741/GalaxyShooter">
+		<p class="portfolio-piece__tags">C#/Unity</p></a>
+		</div>
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/green.png')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/COMP4300-PROJECT">I was once a Blob - 2D retro-styled game</a></h3><a href="https://github.com/afr741/COMP4300-PROJECT">
+		<p class="portfolio-piece__tags">C++</p></a>
+		</div>
+
+
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/yellow.jpg')">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/MIPS-decoder">MIPS decoder written in Java</a></h3><a href="https://github.com/afr741/MIPS-decoder">
+		<p class="portfolio-piece__tags">Java</p></a>
+		</div>
+
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/teal.jpg');">
+			<h3 class="portfolio-piece__title"><a href="https://github.com/afr741/MySQL-PHP-queries">PHP queries for the Mysql database</a></h3><a href="https://github.com/afr741/MySQL-PHP-queries">
+		<p class="portfolio-piece__tags">SQL, PHP</p></a>
+		</div>
+
+		<div class="portfolio-piece med--col-4" style="background-image: url('assets/images/orange.png')">
+			<h3 class="portfolio-piece__title">The Commons VR Training Module<a href="https://github.com/mun-thecommons/VR-Training-Sim"></a></h3><a href="">
+		<p class="portfolio-piece__tags">Unity/C#</p></a>
+		</div>
+
+
+		</div>
+
+		</section>
+
+			<section id="other-works">
+			<div class = "row">
+				<div class="other-works">
+				<h2 class = "title-flex">Other works</h2>
+				<p class ="hero__description med--col-5 lrg--col-7">
 While working as a Digital Media Consultant/Tutor I was involved in development of various graphical content which includes: Logos, Brochures, Infographics, 3D models,magazines, photoshop images, animations, cards, video montages and promotional videos and presentations. Here are some examples of my work:
 </p>
 <div class = row other-workslist>
@@ -203,60 +168,83 @@ While working as a Digital Media Consultant/Tutor I was involved in development 
     <div class="desc">3D model of Daft-Punk helmet designed using AutoDesk Fusion 360</div>
   </div>
 </div>
-</section>
-            </div>
-        </div>
-        <div class="slide" id="slide2">
-            <div class="intro">
-                <h1>Slide 3.2</h1>
 
-                <p>You can apply the same logic to horizontal slides</p>
-            </div>
-        </div>
-        <div class="slide" id="slide3">
-            <h1>Slide 3.3</h1>
-        </div>
-        </div>
-    </div>
-    <div class="section" id="section4">
-        <div class="intro">
-            <h1>Section 4</h1>
-            <section id = "contact" class = "contact">
-  <h2 class = "contact__title white center">Get in Touch</h2>
-  <div class = "contact__social social">
-  <a href  = "https://twitter.com/" class = "social__button facebook"><i class = "fa fa-facebook" aria-hidden="true"></i></a>
-  <a href  = "https://github.com/afr741" class = "social__button github"><i class = "fa fa-github" aria-hidden="true" ></i></a>
-  <a href  = "https://www.linkedin.com/in/anushervon-rakhmatov-996026158/" class = "social__button linkedin "><i class = "fa fa-linkedin" aria-hidden="true"></i></a>
-  <a href  = "https://www.facebook.com/anusher.rahmatov?ref=bookmarks" class = "social__button twitter"><i class = "fa fa-twitter" aria-hidden="true"></i></a>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/demo-logo.png">
+      <img src="assets/images/demo-logo.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">A logo designed using Adobe Photoshop</div>
   </div>
-  <a href ="contact.html" class = "button contact__button" id = "contact-me">Contact Me</a>
-  </section>
-  
-  <footer class = "container">
-    <ul class = "footer-list">
-      <li class = "footer-list__item"> ©Anushervon Rakhmatov 2018.</li>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.youtube.com/watch?v=dx2cN7LRv-Q&t=25s">
+      <img src="assets/images/demo-video.jpg" alt="youtube video" width="600" height="400">
+    </a>
+    <div class="desc">A promo video for the Commons at the Queen Elizabeth II Library designed in Adobe Premiere </div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/demo-apple.jpg">
+      <img src="assets/images/demo-apple.jpg" alt="apple" width="600" height="400">
+    </a>
+    <div class="desc">An apple immage created from scratch in photoshop using shapes, masking and color-refining</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/demo-illustrator.jpg">
+      <img src="assets/images/demo-illustrator.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">A Mandala created in the Adobe Illustrator</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/demo-photoshop.jpg">
+      <img src="assets/images/demo-photoshop.jpg" alt="photoshop" width="600" height="400">
+    </a>
+    <div class="desc">A dispersion effect added using Adobe Photoshop</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/demo-animation.gif">
+      <img src="assets/images/demo-animation.gif" alt="animation" width="600" height="400">
+    </a>
+    <div class="desc">Simple animation created in Photoshop</div>
+  </div>
+</div>
+</div>
+	</div>
+	 <a href ="https://eportfolio.mun.ca/afr741"><p>Check out more in my second portfolio...</p></a>
+	</section>
+
+ 	<section id = "contact" class = "contact">
+	<h2 class = "contact__title white center">Get in Touch</h2>
+	<div class = "contact__social social">
+	<a href  = "https://twitter.com/" class = "social__button facebook"><i class = "fa fa-facebook" aria-hidden="true"></i></a>
+	<a href  = "https://github.com/afr741" class = "social__button github"><i class = "fa fa-github" aria-hidden="true" ></i></a>
+	<a href  = "https://www.linkedin.com/in/anushervon-rakhmatov-996026158/" class = "social__button linkedin "><i class = "fa fa-linkedin" aria-hidden="true"></i></a>
+	<a href  = "https://www.facebook.com/anusher.rahmatov?ref=bookmarks" class = "social__button twitter"><i class = "fa fa-twitter" aria-hidden="true"></i></a>
+	</div>
+	<a href ="contact.html" class = "button contact__button" id = "contact-me">Contact Me</a>
+	</section>
+
+	<footer class = "container">
+		<ul class = "footer-list">
+			<li class = "footer-list__item"> ©Anushervon Rakhmatov 2018.</li>
             <li class="footer-list__item"> All Rights Reserved</li>
          </ul>
 </footer>
-
-        </div>
-    </div>
 </div>
-</div>
-
-  
-
-
-<script type="text/javascript" src="../dist/fullpage.js"></script>
-
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#9166e2','whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-        menu: '#menu',
-        lazyLoad: true
-    });
-</script>
-
 </body>
 </html>

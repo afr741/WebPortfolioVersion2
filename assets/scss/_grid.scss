@@ -13,11 +13,12 @@ $screen : (
 	xlrg: 1440px
 );
 
+
 .container {
 	max-width: 80rem;
 	margin: 0 auto;
 	padding: 0 2rem;
-	
+
 	&--flex {
   	    @extend .container;
 		display: flex;
@@ -25,7 +26,7 @@ $screen : (
 		flex-flow: row wrap;
 		align-items: flex-start;
 	}
-    
+
     &--flex0 {
         @extend .container;
         margin: 0;
@@ -43,7 +44,7 @@ $screen : (
         @media #{$med} {
             margin-bottom: 4rem;
         }
-        
+
         @media #{$lrg} {
             margin-bottom: 6rem;
         }
@@ -60,7 +61,7 @@ $screen : (
 
 
 //    GRID COLUMNS
-    
+
   @media #{$med} {
   	.med, .sml{
 	&--col-8 {padding: 0 1rem; flex: 0 0 100%; max-width:100%;}
@@ -71,7 +72,7 @@ $screen : (
 	&--col-3 {padding: 0 1rem; flex: 0 0 37.5%; max-width:37.5%;}
 	&--col-2 {padding: 0 1rem; flex: 0 0 25%; max-width:25%;}
 	&--col-1 {padding: 0 1rem; flex: 0 0 12.5%; max-width:12.5%;}
-	
+
 	// offset
 	&--offset-8 {padding: 0 1rem; margin-left: 100%;}
 	&--offset-7 {padding: 0 1rem; margin-left: 87.50%;}
@@ -98,7 +99,7 @@ $screen : (
 	&--col-3 {padding: 0 1rem; flex: 0 0 25%; max-width: 25%;}
 	&--col-2 {padding: 0 1rem; flex: 0 0 16.667%; max-width: 16.667%;}
 	&--col-1 {padding: 0 1rem; flex: 0 0 8.333%; max-width: 8.333%;}
-	
+
 	// Offset
 	&--offset-12 {padding: 0 1rem; margin-left: 100% !important;}
 	&--offset-11 {padding: 0 1rem; margin-left: 91.667% !important;}
@@ -112,7 +113,7 @@ $screen : (
 	&--offset-3  {padding: 0 1rem; margin-left: 25% !important;}
 	&--offset-2  {padding: 0 1rem; margin-left: 16.667% !important;}
 	&--offset-1  {padding: 0 1rem; margin-left: 8.333% !important;}
-}   
+}
 }
 
 @media #{$xlrg}{
@@ -129,7 +130,7 @@ $screen : (
 	&--col-3 {padding: 0 1rem; flex: 0 0 25%; max-width: 25%;}
 	&--col-2 {padding: 0 1rem; flex: 0 0 16.667%; max-width: 16.667%;}
 	&--col-1 {padding: 0 1rem; flex: 0 0 8.333%; max-width: 8.333%;}
-	
+
 	// Offset
 	&--offset-12 {padding: 0 1rem; margin-left: 100% !important;}
 	&--offset-11 {padding: 0 1rem; margin-left: 91.667% !important;}
@@ -143,7 +144,5 @@ $screen : (
 	&--offset-3  {padding: 0 1rem; margin-left: 25% !important;}
 	&--offset-2  {padding: 0 1rem; margin-left: 16.667% !important;}
 	&--offset-1  {padding: 0 1rem; margin-left: 8.333% !important;}
-}   
 }
-
-
+}
