@@ -247,6 +247,13 @@ opacity:0;
 
 		text-shadow: 0 2px 2px rgba(0,0,0,0.6);
 	}
+  &__linkDiv{
+    display: flex;
+    text-align: center;
+  }
+  &__link{
+    margin: 2rem;
+  }
 	@media #{$med}{
 		margin-bottom: 0;
 
@@ -296,10 +303,12 @@ opacity:0;
 
 gallery {
     border: 1px solid #ccc;
+
 }
 
 div.gallery:hover {
     border: 5px solid #777;
+
 }
 
 div.gallery img {
@@ -310,10 +319,12 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+
 }
 
 * {
     box-sizing: border-box;
+
 }
 
 .responsive {
@@ -370,7 +381,13 @@ justify-content: center;
 
 		transition: all .25s ease-in-out;
 
-	 	&:hover {color: $link}
+	 	&:hover {
+      color: $link;
+      transform: scale(1.5);
+      transition: 0.3s;
+      transition-timing-function: ease;
+
+    }
 
 }
 }
