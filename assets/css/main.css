@@ -82,12 +82,12 @@ p {
   margin-bottom: 1rem; }
 
 a {
-  color: #FFFFFF;
+  color: white;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
   a:hover {
-    font-size: 150%; }
+    font-size: 130%; }
 
 .white {
   color: white; }
@@ -462,7 +462,7 @@ a {
     margin-left: 8.333% !important; } }
 
 .button {
-  color: white;
+  color: #FFFFFF;
   background: #E87345;
   -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16), 0px 3px 6px 0px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16), 0px 3px 6px 0px rgba(0, 0, 0, 0.23);
@@ -686,9 +686,14 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: center; }
-  .portfolio-piece__link {
-    margin: 2rem; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .portfolio-piece button.btn {
+    margin: 1rem; }
   @media only screen and (min-width: 768px) {
     .portfolio-piece {
       margin-bottom: 0; } }

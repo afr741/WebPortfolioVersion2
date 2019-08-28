@@ -1,10 +1,10 @@
 
 .button {
-	color: white;
+	color: $white;
 	background: $link;
 	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23);
 	padding: 1rem;
-	text-align: center; 
+	text-align: center;
 	text-decoration: none;
 	transition: all .25s ease-in-out;
 	&:hover {
@@ -15,5 +15,5 @@
 	margin-bottom: 2rem;
 	@media #{$med} {margin-bottom: 3rem}
 	@media #{$lrg} {margin-bottom: 4rem}
-	
+
 }

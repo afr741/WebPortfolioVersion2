@@ -248,11 +248,13 @@ opacity:0;
 		text-shadow: 0 2px 2px rgba(0,0,0,0.6);
 	}
   &__linkDiv{
+
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
-  &__link{
-    margin: 2rem;
+  button.btn{
+    margin: 1rem;
   }
 	@media #{$med}{
 		margin-bottom: 0;
