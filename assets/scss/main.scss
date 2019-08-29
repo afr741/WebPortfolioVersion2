@@ -152,7 +152,7 @@ input[type=submit]:hover {
 
 .hero{
 	padding: 2rem 1.5rem;
-
+box-shadow: 5px 10px 8px 5px #888888;
   &__image {
     float:right;
         display: inline-block;
@@ -172,15 +172,14 @@ input[type=submit]:hover {
 		margin-bottom: 1rem;
   }
     &__heroStory{
+      box-shadow: 5px 10px 8px 5px #888888;
       display: inline-block;
         width: 46%;
         @media (max-width: 620px) {
             width: 100%;
           }
 }
-.hero2{
 
-}
 .animate-pop-in {
 opacity:0;
   animation: pop-in 2.0s ease-out forwards;
@@ -213,7 +212,7 @@ opacity:0;
 .portfolio{
 
 	margin: 0rem auto;
-
+box-shadow: 5px 10px 8px 5px #888888;
 
 }
 
@@ -292,7 +291,7 @@ opacity:0;
 
 
 .other-works{
-
+box-shadow: 5px 10px 8px 5px #888888;
 	&__aticle-title{
 		margin-top: 2rem;
 		&:first-child{margin-top: 1.5rem}
@@ -355,7 +354,7 @@ div.desc {
     clear: both;
 }
 .contact {
-
+box-shadow: 5px 10px 8px 10px #888888;
 	background: $text;
 	color: white;
 	padding: 4rem;
