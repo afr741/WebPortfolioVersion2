@@ -15,6 +15,7 @@
 
 
 
+
  <link rel="preload" href="assets/scss/main.scss" as="style">
  <link rel="preload" as="image" href="assets/images/blogbg.jpeg">
   <link rel="preload" href="assets/js/main.js" as="script">
@@ -40,9 +41,6 @@
 
 		<div class = "container header__container">
 
-
-
-
 			<a href = "#hero1" class="button header__button" id = "header-buttons"> About</a><br>
 			<a href = "#port-title" class="button header__button" id = "header-buttons"> My projects</a><br>
 
@@ -51,22 +49,25 @@
 			<a href = "https://zety.com/mycv/anushrakhmatov" class="button  header__button" id = "header-buttons">Resume</a><br>
 			<a href = "contact.html" class="button  header__button" id = "header-buttons"> Contact Me </a><br>
 
-
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
 		</div>
 	</header>
 
 		<div id = "hero1" class = "hero">
-      <img class="hero__image" src="assets/images/face4.png">
+
+
+        <img class="hero__image" src="assets/images/face4.png">
+
       <div class = "heroStory">
-			<h1 class="hero__headline animate-pop-in med--col-5 lrg--col-7">
-			Hi, I am Anushervon Rakhmatov;<br>
-			a Web Developer based in St. John's, NL.
-			</h1>
-			<p class ="hero__description animate-pop-in med--col-5 lrg--col-7">I am a recent graduate from Memorial University of Newfoundland with a major in Computer Science. I have a passion for learning new things and love the thrill of solving challenging problems.</p>
-<p class ="hero__description animate-pop-in med--col-5 lrg--col-7">
-I am also a Full-stack developer in the making and I've obtained my experience through the set of personnal projects and professional work. To check out my most recent works, follow to the next section of this site.
-<p>
-</div>
+			     <h1 class="hero__headline animate-pop-in med--col-5 lrg--col-7">
+			          Hi, I am Anushervon Rakhmatov;<br>
+			             a Web Developer based in St. John's, NL.
+			    </h1>
+			    <p class ="hero__description animate-pop-in med--col-5 lrg--col-7">I am a recent graduate from Memorial University of Newfoundland with a major in Computer Science. I have a passion for learning new things and love the thrill of solving challenging problems.</p>
+          <p class ="hero__description animate-pop-in med--col-5 lrg--col-7">I am also a Full-stack developer in the making and I've obtained my experience through the set of personnal projects and professional work. To check out my most recent works, follow to the next section of this site.</p>
+      </div>
  		</div>
  	</div>
 
@@ -173,7 +174,7 @@ I am also a Full-stack developer in the making and I've obtained my experience t
 			<h3 class="portfolio-piece__title">>Android Weather App</h3>
 		<p class="portfolio-piece__tags">Java</p></a>
     <div class = "portfolio-piece__linkDiv">
-      <a href = ""><button type="button" class="btn btn-success"> View live</a> </button>
+      <button type="button" class="btn btn-danger"> View live </button>
       <button type="button" class="btn btn-primary"><a href = "https://github.com/afr741/Android-Weather-App">Source code</a></button>
     </div>
 		</div>
@@ -181,7 +182,7 @@ I am also a Full-stack developer in the making and I've obtained my experience t
 			<h3 class="portfolio-piece__title">Quizzler - Android Quiz App</h3>
 		<p class="portfolio-piece__tags">Java</p></a>
     <div class = "portfolio-piece__linkDiv">
-      <a href = ""><button type="button" class="btn btn-success"> View live</a> </button>
+      <button type="button" class="btn btn-danger"> View live</button>
     <button type="button" class="btn btn-primary">  <a href = "https://github.com/afr741/Quizler-Android">Source code</a></button>
     </div>
 		</div>
@@ -193,7 +194,7 @@ I am also a Full-stack developer in the making and I've obtained my experience t
 			<h3 class="portfolio-piece__title">MIPS decoder written in Java</h3>
 		<p class="portfolio-piece__tags">Java</p></a>
     <div class = "portfolio-piece__linkDiv">
-      <a href = ""><button type="button" class="btn btn-success"> View live</a> </button>
+      <button type="button" class="btn btn-danger"> View live</button>
     <button type="button" class="btn btn-primary">  <a href = "https://github.com/afr741/MIPS-decoder">Source code</a></button>
     </div>
 		</div>
@@ -299,10 +300,8 @@ While working as a Digital Media Consultant/Tutor I was involved in development 
  	<section id = "contact" class = "contact">
 	<h2 class = "contact__title white center">Get in Touch</h2>
 	<div class = "contact__social social">
-	<a href  = "https://www.facebook.com/anusher.rahmatov?ref=bookmarks" class = "social__button facebook"><i class = "fa fa-facebook" aria-hidden="true"></i></a>
 	<a href  = "https://github.com/afr741" class = "social__button github"><i class = "fa fa-github" aria-hidden="true" ></i></a>
 	<a href  = "https://www.linkedin.com/in/anushervon-rakhmatov-996026158/" class = "social__button linkedin "><i class = "fa fa-linkedin" aria-hidden="true"></i></a>
-	<a href  = "https://twitter.com/afr741" class = "social__button twitter"><i class = "fa fa-twitter" aria-hidden="true"></i></a>
 	</div>
 	<a href ="contact.html" class = "button contact__button" id = "contact-me">Contact Me</a>
 	</section>

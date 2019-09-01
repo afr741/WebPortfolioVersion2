@@ -13,7 +13,7 @@ $SourceSans: 'Source Sans Pro', Helvetica, sans-serif;
 $text: #333333;
 $link: #E87345;
 $light: #9B9B9B;
-$white: #FFFFFF;
+$white: white;
 
 
 //Imports
@@ -119,6 +119,17 @@ input[type=submit]:hover {
 				padding: 1rem;
 				justify-content: space-between;
 				align-items: center;
+
+        @media(max-width: 620px){
+          overflow: hidden;
+          background-color: #333;
+          position: relative;
+
+          .icon{
+            display: block;
+          }
+
+        }
 			}
 			&__title {display: block}
 			}
@@ -128,7 +139,13 @@ input[type=submit]:hover {
     }
 
 }
-
+a.icon{
+  background: black;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 #header-buttons {
 	display: block;
@@ -146,13 +163,16 @@ input[type=submit]:hover {
 
 
 	}
+    @media(max-width: 620px){
+      display: none;
+    }
 }
 
 
 
 .hero{
 	padding: 2rem 1.5rem;
-box-shadow: 5px 10px 8px 5px #888888;
+
   &__image {
     float:right;
         display: inline-block;
@@ -161,8 +181,14 @@ box-shadow: 5px 10px 8px 5px #888888;
         margin: 20px 30px 0 0;
         border-radius: 50%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        overflow: auto;
+        overflow: hidden;
          height: auto;
+         transition: all .2s ease;
+    vertical-align: middle;
+
+    @media(max-width: 620px){
+      display: none;
+    }
 
     }
 
@@ -178,6 +204,7 @@ box-shadow: 5px 10px 8px 5px #888888;
         @media (max-width: 620px) {
             width: 100%;
           }
+
 }
 
 .animate-pop-in {
@@ -208,6 +235,12 @@ opacity:0;
 
 
 }
+.hero img{
+  img{
+    overflow: hidden;
+    height: auto;
+  }
+}
 
 .portfolio{
 
@@ -223,7 +256,7 @@ box-shadow: 5px 10px 8px 5px #888888;
 	height: calc(24rem -2rem);
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: white;
+	color: $white;
 	text-align: center;
 	display:flex;
 	flex-direction: column;
@@ -376,15 +409,15 @@ justify-content: center;
 
 	&__button {
 
-		 margin:0 1rem;
-	 	font-size: 1.5rem;
-	 	color: white;
+		 margin:0 1.7rem;
+	 	font-size: 2rem;
+	 	color: $white;
 
 		transition: all .25s ease-in-out;
 
 	 	&:hover {
       color: $link;
-      transform: scale(1.5);
+      transform: scale(2.1);
       transition: 0.3s;
       transition-timing-function: ease;
 
